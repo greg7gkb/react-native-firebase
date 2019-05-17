@@ -123,7 +123,7 @@ public class RNFirebasePerformance extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void incrementCounter(String identifier, String event) {
-    getOrCreateTrace(identifier).incrementCounter(event);
+    getOrCreateTrace(identifier).incrementMetric(event, 1);
   }
 
   /**
